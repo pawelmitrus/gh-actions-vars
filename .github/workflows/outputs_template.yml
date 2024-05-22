@@ -11,7 +11,7 @@ jobs:
       - name: CI
         id: ci
         uses: "./.github/workflows/template"
-      - id: Outside template 
+      - name: Outside template 
         run: echo "$LAMBDA_VERSION"
   job2:
     runs-on: ubuntu-latest
