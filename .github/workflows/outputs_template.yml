@@ -15,8 +15,8 @@ jobs:
         uses: "./.github/workflows/template"
       - id: step1
         env:
-          OUTPUT1: ${{job1.outputs.lambda_version}}
-        run: echo "$OUTPUT1"
+          OUTPUT1: 
+        run: echo "${{outputs.lambda_version}}"
   job2:
     runs-on: ubuntu-latest
     needs: job1
