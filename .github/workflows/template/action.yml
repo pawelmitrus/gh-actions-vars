@@ -1,6 +1,7 @@
 name: Template
 
 runs:
+  using: composite
   steps:
     - name: Set version
       id: set_lambda_version
