@@ -13,6 +13,10 @@ jobs:
       - name: CI
         id: ci
         uses: "./.github/workflows/template"
+      - id: step1
+        env:
+          OUTPUT1: ${{job1.outputs.lambda_version}}
+        run: echo "$OUTPUT1"
   job2:
     runs-on: ubuntu-latest
     needs: job1
