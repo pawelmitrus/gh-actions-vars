@@ -1,0 +1,8 @@
+name: Template
+
+runs:
+  steps:
+    - name: Set version
+      id: set_lambda_version
+      run: echo "lambda_version=1.0.0" >> $GITHUB_OUTPUT
+      shell: bash
